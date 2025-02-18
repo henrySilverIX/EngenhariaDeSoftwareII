@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "inquirer": "^12.4.2"
+    "prompt-sync": "^4.2.0"
   }
 }
