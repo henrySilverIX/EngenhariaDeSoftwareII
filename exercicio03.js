@@ -1,3 +1,4 @@
+//Não se esqueça de baixar o inquirer
 const inquirer = require('inquirer')
 
 inquirer.prompt([
@@ -7,3 +8,4 @@ inquirer.prompt([
 ]).then(respostas => {
     console.log(respostas.name)
 })
+
