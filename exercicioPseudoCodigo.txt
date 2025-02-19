@@ -1,1 +1,75 @@
-Fazer o pseudocódigo da hotelaria
+classe funcionario:
+    - codigo: int
+    - horasTrabalhadas: int
+    - turnoTrabalho: char
+    - categoria: char
+
+
+Métodos da classe funcionario:
+------------------------------------------------------------------------
+calcularHoraTrabalhada (double salarioMinimoEstadual): double
+switch(categoria){
+    case "G":
+        se M ou V:
+            valor_da_hora = salarioMinimoEstadual * 0.04
+        caso contraio:
+            valor_da_hora = salarioMinimoEstadual * 0.06
+    case "F":
+        se M ou V:
+            valor_da_hora = salarioMinimoEstadual * 0.01
+        caso contrario:
+            valor_da_hora = salarioMinimoEstadual * 0.02
+    
+    retorna valor_da_hora
+}
+
+
+------------------------------------------------
+calcularSalarioInicial(): double
+retorne calcularHoraTrabalhada * horasTrabalhadas
+------------------------------------------------
+
+calcularAuxilioAlimentacao(): double
+se calcularSalarioInicial <= 800.00
+    retorne calcularSalarioInicial * 0.25
+
+senão se calcularSalarioInicial > 800.00 e calcularSalarioInicial <= 1200.00
+    retorne calcularSalarioInicial * 0.20
+
+caso contrario
+    retorne calcularSalarioInicial * 0.15
+------------------------------------------------------------
+calcularSalarioFinal(): double
+retorne calcularSalarioInicial() + calcularAuxilioAlimentacao()
+------------------------------------------------------------
+
+codigo principal:
+
+Declare as variaveis:
+cod_funcionario, horas_trab: int
+turno_trabalho, categ: char
+salario_min_est: double
+
+
+imprimir("Digite o código do funcionario: ")
+ler(cod_funcionario)
+
+imprimir("Digite as horas trabalhadas do funcionário: ")
+ler(horas_trab)
+
+imprimir("Digite o turno do funcionario (M - manhã, V - vespertino, N - noite): ")
+ler(turno_trabalho)
+
+imprimir("Digite a categoria do funcionário (F - funcionário, G - gerente): ")
+ler(categ)
+
+declaração do objeto funcionario
+funcionario(cod_funcionario, horas_trab, turno_trabalho, categ)
+
+
+imprimir("Código do funcionario: " + funcionario.getCod + "\n" +
+        "Número de horas trabalhadas: " + funcionario.getHorasTrabalhadas + "\n" +
+        "Valor da hora trabalhada: " + funcionario.calcularHoraTrabalhada() + "\n" +
+        "Salário inicial: " + funcionario.calcularSalarioInicial() + "\n" +
+        "Auxílio alimentação: " + funcionario.calcularAuxilioAlimentacao() + "\n" +
+        "Salário final: " + funcionario.calcularSalarioFinal())
