@@ -1,29 +1,30 @@
-const readline = require("readline")
+const prompt = require('prompt-sync')();
 
-const meses = {
-    1: 'Janeiro',
-    2: 'Fevereiro',
-    3: 'Março',
-    4: 'Abril',
-    5: 'Maio',
-    6: 'Junho',
-    7: 'Julho',
-    8: 'Agosto',
-    9: 'Setembro',
-    10: 'Outubro',
-    11: 'Novembro',
-    12: 'Dezembro',
+
+//Função para fazer a operação aritmética
+function calculo(num1, num2, operacao){
+    let total
+    switch(operacao){
+        case "soma":
+            total = num1 + num2
+            break
+        case "subtração":
+            total = num1 - num2
+            break
+        default:
+            console.log("Selecione uma operação válida: (adição ou subtração)")
+    }
+
+    return total
 }
 
-const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+//Entrada de dados
+let numero1 = parseInt(prompt("Digite o primeiro número: "))
+let operacao = prompt("Operação a ser feita (soma ou subtração): ").toLowerCase()
+if(operacao === 'subtracao' || operacao === '-'){
+    operacao = 'subtração'
+}
+let numero2 = parseInt(prompt("Digite o segundo número: "))
 
-rl.question("Digite uma data (dd/mm/yyyy): ", (data) => {
-    let newData = data.split("/")
-    let stringDataFormatada = newData[0] +" de " + meses[parseInt(newData[1])] + " de " + newData[2]
-    
-    console.log(stringDataFormatada)
-    rl.close()
-})
+//Exibição dos resultados
+console.log(`O resultado é: ${calculo(numero1, numero2, operacao)}`)

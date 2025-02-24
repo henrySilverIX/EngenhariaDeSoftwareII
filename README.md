@@ -1,4 +1,4 @@
-# EngenhariaDeSoftwareII
+# Engenharia De Software II
 
 ## Primeira lista de exercícios de Javascript
 
@@ -24,8 +24,9 @@ VIII) Ao término o sistema deve fornecer a seguinte saída para o usuário:<br>
 
 2. Crie uma aplicação capaz de identificar a faixa etária com base na idade informada pelo usuário. Considere os seguintes critérios:
 Se a idade informada for maior ou igual a 0 e menor que 15, exibir a mensagem “Criança”. Se a idade informada for maior ou igual a 15 e menor que 30, exibir a mensagem “Jovem”. Se a idade informada for maior ou igual a 30 e menor que 60, exibir a mensagem “Adulto”. Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”.
-Fique à vontade para utilizar qualquer uma das funções aprendidas para exibição de dados para o usuário.
-Um aluno está encontrando dificuldades para entender como é composta a média final de determinada disciplina, a qual é composta pelas três notas seguintes:
+Fique à vontade para utilizar qualquer uma das funções aprendidas para exibição de dados para o usuário. <br>
+
+3. Um aluno está encontrando dificuldades para entender como é composta a média final de determinada disciplina, a qual é composta pelas três notas seguintes:
 
 ![Notas e pesos](img/image.png)
 
@@ -42,7 +43,7 @@ Ao término, a aplicação deverá gerar como saída:
 ![Média do aluno](img/image3.png)
 
 
-3. Uma empresa do ramo metalmecânico está realizando uma pesquisa junto a transportadoras para verificar o preço do transporte de seus produtos que serão entregues a seus clientes em outros estados. Ao final da pesquisa, foi selecionada uma transportadora, com a qual foi fechado o transporte dos produtos. O cliente pode selecionar se quer a sua entrega com rastreamento ou não. Assim, deverá ser feita uma pergunta ao cliente. Deseja rastreamento (S-Sim e N-Não)? Se a resposta for “sim”, será cobrada uma taxa de R$ 200,00 pela carga. Cálculo do frete (calcular o valor pelo número de peças transportadas):<br>
+4. Uma empresa do ramo metalmecânico está realizando uma pesquisa junto a transportadoras para verificar o preço do transporte de seus produtos que serão entregues a seus clientes em outros estados. Ao final da pesquisa, foi selecionada uma transportadora, com a qual foi fechado o transporte dos produtos. O cliente pode selecionar se quer a sua entrega com rastreamento ou não. Assim, deverá ser feita uma pergunta ao cliente. Deseja rastreamento (S-Sim e N-Não)? Se a resposta for “sim”, será cobrada uma taxa de R$ 200,00 pela carga. Cálculo do frete (calcular o valor pelo número de peças transportadas):<br>
 • Três variáveis influenciam o valor do frete: o número de peças, a região e a distância em quilômetros.<br>
 • Até mil peças – o valor será conforme a região apresentada na tabela abaixo. O valor é cobrado por cada peça transportada.<br>
 • Acima de mil peças – valor normal para até mil peças; o número de peças que ultrapassar mil tem desconto conforme a região.<br>
@@ -61,7 +62,13 @@ Valor do frete pelas peças: 9999.99 <br>
 Valor do frete por quilômetro: 999.99 <br>
 Total do frete: 999.99 <br>
 
-4. Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: código, número de horas trabalhadas no mês, turno de trabalho (M – matutino, V – vespertino ou N – noturno), categoria (F – funcionário, G – gerente). Faça um algoritmo que: - Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
+5. Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: 
+• código,
+• número de horas trabalhadas no mês,
+• turno de trabalho (M – matutino, V – vespertino ou N – noturno), 
+• categoria (F – funcionário, G – gerente). <br>
+Faça um algoritmo que: <br>
+-Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
 
 
 ![Tabela turno e descrição](/img/image5.png)
@@ -77,7 +84,7 @@ Total do frete: 999.99 <br>
 
 - Imprima como saída o código, número de horas trabalhadas, valor da hora trabalhada, salário inicial, auxílio alimentação e salário final (salário inicial + auxílio-alimentação).
 
-5. Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
+6. Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
 Considere os seguintes critérios:<br>
 I) Ao executar o script a aplicação deve solicitar a entrada de um número, seguido de uma operação de soma ou subtração e posteriormente seguido de um segundo número.<br>
 II) A operação deve ser inserida pelo usuário de forma textual, ou seja, quando o sistema solicita a operação o usuário deve informar o texto ‘soma’ ou ‘subtração’ (sem as aspas).<br>
@@ -88,5 +95,5 @@ V) Ao término o sistema deve fornecer a seguinte saída para o usuário:<br>
 *A informação em vermelho é uma variável e deve ser substituída pelo seu respectivo valor
 calculada dentro da aplicação.<br>
 
-6. Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a data por extenso. Dica: use a função “split” de uma string que quebra a string em pedaços dado um separador como argumento da função. Nesse caso, o separador é a barra (/) da data. Exemplo: Para a entrada “31/08/2012” deve ser escrito “31 de agosto de 2012”.
+7. Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a data por extenso. Dica: use a função “split” de uma string que quebra a string em pedaços dado um separador como argumento da função. Nesse caso, o separador é a barra (/) da data. Exemplo: Para a entrada “31/08/2012” deve ser escrito “31 de agosto de 2012”.
 
