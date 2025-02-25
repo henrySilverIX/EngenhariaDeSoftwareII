@@ -62,10 +62,10 @@ Valor do frete pelas peças: 9999.99 <br>
 Valor do frete por quilômetro: 999.99 <br>
 Total do frete: 999.99 <br>
 
-5. Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: 
-• código,
-• número de horas trabalhadas no mês,
-• turno de trabalho (M – matutino, V – vespertino ou N – noturno), 
+5. Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: <br>
+• código,<br>
+• número de horas trabalhadas no mês,<br>
+• turno de trabalho (M – matutino, V – vespertino ou N – noturno), <br>
 • categoria (F – funcionário, G – gerente). <br>
 Faça um algoritmo que: <br>
 -Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
